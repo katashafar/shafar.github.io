@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: judul; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: isi; }
+.item4 { grid-area: isi2; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'judul judul judul judul judul judul'
+    'menu isi isi isi isi2 isi2'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: cyan;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(61, 112, 87);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+
+<div class="grid-container">
+  <div class="item1">Judul</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Isi</div>  
+  <div class="item4">Isi 2</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
